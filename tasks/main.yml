@@ -1,5 +1,8 @@
 ---
 #
+- name: Create virtualenv
+  ansible.builtin.shell: "{{ python_ver }} -m venv {{ venv_home_dir }}"
+
 - name: Upgrade pip
   ansible.builtin.pip:
     name: "{{ venv_default_software }}"
@@ -12,4 +15,4 @@
   ansible.builtin.pip:
     name: "{{ venv_software }}"
     virtualenv: "{{ venv_home_dir }}"
-    virtualenv_command: python3 -m venv
+    virtualenv_command: "python3.9 -m venv"
