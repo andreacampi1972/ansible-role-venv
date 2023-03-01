@@ -1,0 +1,6 @@
+---
+venv_default_software:
+  -  pip
+  - setuptools
+  - wheel
+

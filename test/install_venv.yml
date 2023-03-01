@@ -1,0 +1,12 @@
+---
+
+#Install virtual environment
+- name: Install virtualenv
+  hosts: localhost
+  vars:
+   venv_software:
+     - certbot
+   venv_home_dir: "~/venv"
+
+  roles:
+   - ansible-role-venv
