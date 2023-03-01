@@ -1,6 +1,6 @@
 ---
 venv_default_software:
-  -  pip
+  - pip
   - setuptools
   - wheel
-
+python_ver: python3.8
